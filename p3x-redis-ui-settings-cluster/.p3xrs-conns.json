@@ -1,0 +1,19 @@
+{
+    "update": "2024-02-13T11:22:35.721Z",
+    "list": [
+        {
+            "name": "redis-cluster",
+            "host": "redis-node-0",
+            "port": 6379,
+            "askAuth": false,
+            "id": "P3Xid84d4132ad81010004690365f5716a4",
+            "tlsWithoutCert": false,
+            "tlsRejectUnauthorized": true,
+            "cluster": true,
+            "nodes": [],
+            "$$hashKey": "object:74",
+            "username": "",
+            "password": "bitnami"
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "update": "2024-02-13T11:12:05.067Z",
+    "list": [
+        {
+            "name": "local-sentinel",
+            "host": "redis-master",
+            "port": 6379,
+            "askAuth": false,
+            "id": "P3Xid8c7ba22ad8101000046147aecd0a4c",
+            "tlsWithoutCert": false,
+            "tlsRejectUnauthorized": true,
+            "cluster": false,
+            "nodes": []
+        }
+    ]
+}

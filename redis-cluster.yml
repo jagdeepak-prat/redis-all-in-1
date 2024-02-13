@@ -3,10 +3,21 @@
 
 version: '2'
 services:
+  redis-ui:
+    image: patrikx3/p3x-redis-ui:latest
+    ports:
+      - 7843:7843
+    depends_on:
+      - redis-node-0
+    volumes:
+      - ./p3x-redis-ui-settings-cluster:/settings
+
   redis-node-0:
     image: docker.io/bitnami/redis-cluster:7.2
     volumes:
       - redis-cluster_data-0:/bitnami/redis/data
+    ports:
+      - 6379:6379
     environment:
       - 'REDIS_PASSWORD=bitnami'
       - 'REDIS_NODES=redis-node-0 redis-node-1 redis-node-2 redis-node-3 redis-node-4 redis-node-5'
