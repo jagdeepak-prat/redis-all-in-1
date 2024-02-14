@@ -1,0 +1,12 @@
+# Copyright VMware, Inc.
+# SPDX-License-Identifier: APACHE-2.0
+
+version: '2'
+services:
+  node:
+    image: "node:16.20.1"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nodepoc:/code
+    command: "node code/cluster/index.js"

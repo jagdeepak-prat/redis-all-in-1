@@ -3,6 +3,13 @@
 
 version: '2'
 services:
+  node:
+    image: "node:16.20.1"
+    ports:
+      - 3000:3000
+    volumes:
+      - ./nodepoc/cluster:/code
+    command: "node code/index.js"
   redis-ui:
     image: patrikx3/p3x-redis-ui:latest
     ports:
