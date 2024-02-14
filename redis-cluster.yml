@@ -2,6 +2,7 @@
 # SPDX-License-Identifier: APACHE-2.0
 
 version: '2'
+name: redis-cluster
 services:
   node:
     image: "node:16.20.1"
