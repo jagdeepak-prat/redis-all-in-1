@@ -8,9 +8,12 @@ services:
     image: "node:16.20.1"
     ports:
       - 3000:3000
+      - 5350:5350
     volumes:
       - ./nodepoc/cluster:/code
+      - ./nodepoc/oepy-consolidation:/oepy-consolidation
     command: "node code/index.js"
+    # command: "sh ./oepy-consolidation/nohup_pg_start_with_migrate.sh"
   redis-ui:
     image: patrikx3/p3x-redis-ui:latest
     ports:

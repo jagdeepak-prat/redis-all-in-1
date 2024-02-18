@@ -5,8 +5,11 @@ services:
     image: "node:16.20.1"
     ports:
       - 3000:3000
+      - 5350:5350
     volumes:
       - ./nodepoc/sentinel:/code
+      - ./nodepoc/oepy-consolidation:/oepy-consolidation
+    # working_dir: "oepy-consolidation"
     command: "node code/index.js"
   redis-ui:
     image: patrikx3/p3x-redis-ui:latest
